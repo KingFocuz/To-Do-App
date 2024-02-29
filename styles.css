@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@400;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@300;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+main{
+    width: 350px;
+    max-width: 400px;
+    max-height: 500px;
+    background-color: #eee;
+    margin: auto;
+    box-shadow: 2px 3px 4px 4px #eec;
+    border-radius: 8px;
+    overflow: auto;
+}
+header{
+    background-color: #eec;
+    margin: 18px auto auto auto;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 2px grey;
+    border: none;
+    width: 300px;
+}
+#date{
+    font-family: raleway, sans-serif;
+    padding: 8px;
+}
+h1{
+    font-family: Dancing Script, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    color: #2a2a40;
+}
+ul li{
+    list-style-type: none;
+    width: 300px;
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    margin-bottom: 18px;
+    position: relative;
+    cursor: pointer;
+    left: 45px;
+}
+ul li::before{
+    content: "";
+    background-image: url(Images/icons8-unchecked-checkbox-48.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    position: absolute;
+    left: -30px;
+}
+ul li.completed{
+    background-repeat: no-repeat;
+    text-decoration: line-through;
+}
+ul li.completed::before{
+    background-image: url(Images/icons8-checked-checkbox-48.png);
+}
+ul li span{
+    position: absolute;
+    right: 80px;
+    cursor: pointer;
+
+}
+#input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+}
+#description{
+    border: none;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    font-family: inter, sans-serif;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    width: 250px;
+    text-align: center;
+}
+#add-task-btn{
+    display: block;
+    margin: 20px auto 30px;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 1px 1px 1px 2px grey;
+    color: #2a2a40;
+    box-shadow: 2px 2px 2px 2px grey;
+    cursor: pointer;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+.material-symbols-outlined:hover{
+    color: red;
+}
